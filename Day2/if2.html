@@ -1,0 +1,24 @@
+<!-- 
+    1. WAP to accept 2 numbers from user and check if their last digit is same or not
+    n1 = 563, n2 = 16893
+    last_digit = 3 -> in both so last digit of 563 and 16893 is same 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num1 = parseInt(prompt("Enter the number"));
+      let num2 = parseInt(prompt("Enter the number"));
+      if (num1 % 10 == num2 % 10) {
+        console.log("Last digit is same");
+      } else {
+        console.log("Last digit is not same");
+      }
+    </script>
+  </body>
+</html>
