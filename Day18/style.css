@@ -1,31 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
 }
 
 body {
-  background-color: #f9fafb;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: "Press Start 2P", cursive;
 }
 
 .container {
-  background-color: #ffffff;
-  border: 2px solid #0ea5e9;
+  background-color: #160d1b;
+  border: 2px solid #cad2c9;
+  -webkit-box-shadow: 0px 1px 29px 5px #074a79db; 
+box-shadow: 0px 1px 29px 5px #034d81e0;
   border-radius: 16px;
   padding: 30px;
   width: 380px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 h1 {
-  color: #1e3a8a;
+  color: #ffffff;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .password-box{
@@ -35,7 +40,8 @@ h1 {
   display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #6b4f2f;
+  color: #b0ada9;
+  font-size: 12px;
 }
 
 .input-group {
@@ -46,12 +52,19 @@ h1 {
   border-radius: 8px;
   overflow: hidden;
 }
+.input-group ::placeholder {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
+  /* padding: 5px; */
+}
+
 
 #password {
   width: 100%;
   border: none;
   padding: 10px;
-  color: #047857;
+  color: #060800;
   font-weight: 500;
   font-size: 14px;
   background-color: #f9fafb;
@@ -71,7 +84,8 @@ h1 {
 .length-box {
   margin-top: 20px;
   text-align: left;
-  color: #6b4f2f;
+  color: #b0ada9;
+  font-size: 12px;
 }
 
 .slider-box {
@@ -79,6 +93,7 @@ h1 {
   align-items: center;
   gap: 10px;
   margin-top: 8px;
+  font-size: 12px;
 }
 
 #lengthRange {
@@ -87,11 +102,11 @@ h1 {
 }
 
 #lengthValue {
-  background-color: #fef9c3;
-  border: 1px solid #d97706;
+  background-color: #ffffff;
+  border: 1px solid #b0ada9;
   border-radius: 4px;
   padding: 4px 8px;
-  color: #b45309;
+  color: #0b0b0b;
 }
 
 .options {
@@ -100,29 +115,33 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #064e3b;
+  color: #6cb7f9;
+  
 }
 
 .options label {
   display: flex;
   align-items: center;
   gap: 8px;
+  font-size: 10px;
 }
 
 #generateBtn {
-  background-color: #f472b6;
-  border: 2px solid #db2777;
-  color: #111827;
-  font-weight: 600;
+  background-color: #7d09c5;
+  border: 2px solid #27682c;
+  color: #d0d3d9;
+  font-weight: 500;
   border-radius: 8px;
   padding: 10px 20px;
   margin-top: 20px;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 10px;
+  font-family: "Press Start 2P", cursive;
 }
 
 #generateBtn:hover {
-  background-color: #ec4899;
+  background-color: #313c6f;
   color: white;
 }
 
